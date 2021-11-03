@@ -38,14 +38,14 @@ const EditUser = () => {
   const { name, username, email, phone, website } = faq;
   return (
     <div className="container">
-      <h1 className="text-center my-5">Edit User</h1>
+      <h1 className="text-center my-5">Edit FAQ</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-3">
           <input
             type="text"
             name="name"
             className="form-control"
-            placeholder="Enter your name"
+            placeholder="Enter Question"
             value={name}
             onChange={(e) => onInputChange(e)}
           />
@@ -56,7 +56,7 @@ const EditUser = () => {
             name="username"
             value={username}
             className="form-control"
-            placeholder="Enter your user name"
+            placeholder="Enter Answer"
             onChange={(e) => onInputChange(e)}
           />
         </div>
@@ -91,7 +91,7 @@ const EditUser = () => {
           />
         </div> */}
         <Button variant="warning" type="submit">
-          Update User
+          Update FAQ
         </Button>
       </form>
     </div>
